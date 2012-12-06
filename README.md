@@ -86,7 +86,7 @@ If the second argument to the decrypt function isn't in the filter the catalog w
 
 	enc_file { 'supersecretfile':
 	    path => '/etc/secrets',
-	    content => encrypt_rsa(decrypt_rsa(template('secret/enc.data'),$fqdn),"${settings::publickeydir}/${clientcert}.pem")
+	    content => encrypt_rsa(decrypt_rsa(template('secret/enc.data'),$fqdn),nil,"${settings::publickeydir}/${clientcert}.pem")
 	 }
 	file { 'supersecretfile':
 	      path => '/etc/secrets',
@@ -101,7 +101,7 @@ You can also encrypt simple strings
 
 	enc_file { 'supersecretfile':
 	    path => '/etc/secrets',
-	    content => encrypt_rsa("simplestring","${settings::publickeydir}/${clientcert}.pem")
+	    content => encrypt_rsa("simplestring",nil,"${settings::publickeydir}/${clientcert}.pem")
 	 }
 	file { 'supersecretfile':
 	      path => '/etc/secrets',
@@ -111,4 +111,4 @@ You can also encrypt simple strings
 	      mode => 0400,
 	}
 
-This is very beta so be careful as the encrypted file formate may change. 
+This is very beta so be careful as the encrypted file formate may change.
