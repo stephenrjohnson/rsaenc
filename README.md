@@ -111,4 +111,4 @@ You can also encrypt simple strings
 	      mode => 0400,
 	}
 
-This is very beta so be careful as the encrypted file formate may change.
+This is very beta so be careful as the encrypted file formate may change. If you have any changes fork and pull request.
