@@ -1,2 +1,2 @@
 language: ruby
-script: "rake spec"
+script: "pwd && ls && rake spec"
