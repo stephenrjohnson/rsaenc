@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/stephenrjohnson/rsaenc.png)](https://travis-ci.org/stephenrjohnson/rsaenc)
+
 RSA ENC File Type / Functions / Face
 ====================================
 
