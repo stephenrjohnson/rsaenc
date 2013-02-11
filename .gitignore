@@ -1,3 +1,4 @@
 Gemfile.lock
 *.swp
 *.DS_Store
+spec/fixtures
